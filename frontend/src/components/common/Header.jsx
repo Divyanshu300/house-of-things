@@ -1,5 +1,5 @@
 // src/components/Header.js
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../../utils/images/logo.webp"
 import { CiMenuBurger } from "react-icons/ci";
@@ -8,12 +8,17 @@ import { CiHeart } from "react-icons/ci";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { CiSearch } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
+import useOnClickOutside from '../../hooks/useOnClickOutside';
 
 
 const Header = () => {
 
   const [isMenu , setIsMenu] = useState(false);
   const [searchField , setSearchField] = useState(false);
+
+  const ref = useRef(null)
+
+  useOnClickOutside(ref , ()=> setIsMenu(false))
 
   return (
     <header className=' sticky top-0 z-10'>
@@ -22,7 +27,7 @@ const Header = () => {
           <div className="container w-9/12 mx-auto py-5">
             <div className="flex items-center justify-between">
               <div className='flex items-center gap-6 '>
-                <div className='transition-all duration-500 cursor-pointer' onClick={()=>setIsMenu((prev) => !prev)}>
+                <div ref = {ref} className='transition-all duration-500 cursor-pointer' onClick={()=>setIsMenu((prev) => !prev)}>
                   {
                     isMenu ? <RxCross1 className='text-2xl text-gray-600'/> : <CiMenuBurger className='text-2xl text-gray-600'/>
                   }
