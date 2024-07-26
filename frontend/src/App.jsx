@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/common/Header.jsx';
 import Home from './pages/Home.jsx';
 import Signup from './components/Signup.jsx';
+import Login from './components/Login.jsx';
+import Footer from './components/common/Footer.jsx';
 // import Footer from './components/Footer';
 // import Home from './components/Home';
 // import ProductList from './components/ProductList';
@@ -20,20 +22,11 @@ const App = () => {
       <div className="flex flex-col min-h-screen relative">
 
         <Header className="fixed"/>
-        {/* <Home/> */}
-        <Signup/>
-        {/* <main className="flex-grow"> */}
-          {/* <Switch> */}
-            {/* <Route path="/" exact component={<Home/>} /> */}
-            {/* <Route path="/signup" exact component={} /> */}
-            {/* <Route path="/products" exact render={() => <ProductList products={products} />} />
-            <Route path="/products/:id" render={({ match }) => {
-              const product = products.find(p => p.id === parseInt(match.params.id));
-              return <ProductDetails product={product} />;
-            }} /> */}
-          {/* </Switch> */}
-        {/* </main> */}
-        {/* <Footer /> */}
+        <Home/>
+        {/* <Login/> */}
+        {/* <Signup/> */}
+        
+        <Footer />
       </div>
     </Router>
   );
