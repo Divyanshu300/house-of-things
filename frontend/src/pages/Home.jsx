@@ -27,21 +27,133 @@ const Home = () => {
             <div className='flex gap-8 mx-auto mt-10'>
               
               <div className='flex flex-col gap-8'>
-                <div className='flex gap-8 relative'>
-                  <img src={new1} alt='' className='w-[270px] -z-[100] hover:opacity-[30%] group'/>
-                  <img src={new2} alt='' className='w-[270px]'/>
-                </div>
-                  <div className='w-full h-full hidden z-100 group-hover:flex items-center justify-center '>
-                    sdvsd
+                <div className='flex gap-8'>
+                  
+                  <div className='relative group'>
+                    
+                    <img src={new1} alt='' className='w-[270px] -z-10'/>
+                    
+                    <div className='absolute text-sm flex-col gap-2 inset-0 hidden z-0 group-hover:flex items-center justify-center bg-white bg-opacity-[60%] text-black'>
+                      <button className='hover:underline font-semibold'>
+                        TINAJA VASES
+                      </button>
+                      <button>
+                        By <span className='hover:opacity-[70%] transition-all duration-200 '>THOT X D'Lab</span>
+                      </button>
+                      <div className='font-semibold'> 
+                        ₹6,950.00
+                      </div>
+
+                    </div>
+                  
                   </div>
-                <img src={new3} alt='' className='w-[570px]'/>
+                  
+                  <div className='relative group'>
+
+                    <img src={new2} alt='' className='w-[270px] -z-10'/>
+
+                    <div className='absolute text-sm flex-col gap-2 inset-0 hidden z-0 group-hover:flex items-center justify-center bg-white bg-opacity-[60%] text-black'>
+                      <button className='hover:underline font-semibold'>
+                        Kori Wooden Basket
+                      </button>
+                      <button>
+                        By <span className='hover:opacity-[70%] transition-all duration-200 '>Studio Indigene</span>
+                      </button>
+                      <div className='font-semibold'> 
+                        ₹4,800.00
+                      </div> 
+                    </div>
+                  </div>
+                
+                </div>
+
+                <div className='relative group'>
+
+                  <img src={new3} alt='' className='w-[570px]'/>
+
+                  <div className='absolute text-sm flex-col gap-2 inset-0 hidden z-0 group-hover:flex items-center justify-center bg-white bg-opacity-[60%] text-black'>
+                    
+                    <button className='hover:underline font-semibold'>
+                      Terra Book Shelf
+                    </button>
+                  
+                    <button>
+                      By <span className='hover:opacity-[70%] transition-all duration-200 '>By Objectry</span>
+                    </button>
+                  
+                    <div className='font-semibold'> 
+                      ₹47,600.00
+                      </div> 
+                  
+                  </div>
+
+                </div>
+              
               </div>              
               
               <div className='flex flex-col gap-8'>
-                <img src={new4} alt='' className='w-[570px]'/>
+
+                <div className='relative group'>
+                
+                  <img src={new4} alt='' className='w-[570px] -z-10'/>
+                  
+                  <div className='absolute text-sm flex-col gap-2 inset-0 hidden z-0 group-hover:flex items-center justify-center bg-white bg-opacity-[60%] text-black'>
+                    
+                    <button className='hover:underline font-semibold'>
+                      Ant Light
+                    </button>
+                  
+                    <button>
+                      By <span className='hover:opacity-[70%] transition-all duration-200 '>Shailesh Rajput Studio</span>
+                    </button>
+                  
+                    <div className='font-semibold'> 
+                      ₹15,340.00
+                    </div>
+                  
+                  </div>
+                
+                </div>
+
                 <div className='flex gap-8'>
+                <div className='relative group'>
                   <img src={new5} alt='' className='w-[270px]'/>
+                  
+                  <div className='absolute text-sm flex-col gap-2 inset-0 hidden z-0 group-hover:flex items-center justify-center bg-white bg-opacity-[60%] text-black'>
+                    
+                    <button className='hover:underline font-semibold'>
+                      Serving Hope I Sculpture
+                    </button>
+                  
+                    <button>
+                      By <span className='hover:opacity-[70%] transition-all duration-200 '>Claymen Studio</span>
+                    </button>
+                  
+                    <div className='font-semibold'> 
+                    ₹65,000.00
+                    </div>
+                  
+                  </div>
+                  </div>
+                  <div className='relative group'>
                   <img src={new6} alt='' className='w-[270px]'/>
+                  
+                  <div className='absolute text-sm flex-col gap-2 inset-0 hidden z-0 group-hover:flex items-center justify-center bg-white bg-opacity-[60%] text-black'>
+                    
+                    <button className='hover:underline font-semibold'>
+                      Maha 04
+                    </button>
+                  
+                    <button>
+                      By <span className='hover:opacity-[70%] transition-all duration-200 '>Art Attaichi</span>
+                    </button>
+                  
+                    <div className='font-semibold'> 
+                      ₹198,000.00
+                    </div>
+                  
+                  </div>
+                </div>
                 </div>
               </div>                        
             
