@@ -15,14 +15,14 @@ const Footer = () => {
     console.log(second)
   return (
     <div className='bg-gray-50 text-gray-700 text-sm'>
-        <div className='flex items-center justify-center gap-12 border-b-[1px] h-[7rem]'>
+        {/* <div className='flex items-center justify-center gap-12 border-b-[1px] h-[7rem]'>
             <div className='text-sm'>
                 T&C
             </div>
             <div className='text-sm'>
                 Privacy Policy
             </div>
-        </div>
+        </div> */}
 
         <div className='flex px-10 items-center justify-center gap-52 my-10'>
             <div className='flex flex-col gap-12 mt-10'>
